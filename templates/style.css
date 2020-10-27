@@ -1,3 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+.nav{
+    top:0;
+    width:100%;
+    background-color: #022B3A;
+    position: fixed;
+    text-align: center;
+}
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav li{
+    display: inline;
+}
+ .nav a{
+    display: inline-block;
+    color: #1F7A8C;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+ .nav a:hover{
+    color: white;
+ }
+#button{
+    color: white;
+    border: solid;
+    border-radius: 10px;
+}
+#button:hover{
+    background-color: #1F7A8C ;
+    color:black;
+}
+#search{
+    background-color: #1F7A8C ;
+    color:black;
+    border-radius: 10px;
+}
 body{
-    box-sizing: content-box;
+    background-color: #BFDBF7;
+    margin:0;
+}
+.pueblo-listing{
+    padding-top:120px;
 }
