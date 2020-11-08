@@ -1,108 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/styles/index.css') }}">
     <title>College House</title>
 </head>
-<header>
-    <div class="nav">
-        <ul>
-            <li><a>Rent</a></li>
-            <li><a>Buy</a></li>
-            <li><a>See All</a></li>
-            <li><a id ="button">Log in/Sign up</a></li>
-        </ul>
-        <input type="text" placeholder="Country, city, zip code... ">
-        <a id="search">Buscar</a>
-        <br>
-        <button class="map-button">Find listings near me</button>
-    </div>
-</header>
-<img src="morro.png" alt="El Morro">
-<body>  
-    <div class="pueblo-listing">
-        <ul style="list-style-type:none;">
-            <li><a>Adjuntas</a></li>
-            <li><a>Aguada</a></li>
-            <li><a>Aguadilla</a></li>
-            <li><a>Aguas Buenas</a></li>
-            <li><a>Aibonito</a></li>
-            <li><a>Añasco</a></li>
-            <li><a>Arecibo</a></li>
-            <li><a>Arroyo</a></li>
-            <li><a>Añasco</a></li>
-            <li><a>Barceloneta</a></li>
-            <li><a>Barranquitas</a></li>
-            <li><a>Bayamón</a></li>
-            <li><a>Cabo Rojo</a></li>
-            <li><a>Caguas</a></li>
-            <li><a>Camuy</a></li>
-            <li><a>Canóvanas</a></li>
-            <li><a>Carolina</a></li>
-            <li><a>Cataño</a></li>
-            <li><a>Cayey</a></li>
-            <li><a>Ceiba</a></li>
-            <li><a>Ciales</a></li>
-            <li><a>Cidra</a></li>
-            <li><a>Coamo</a></li>
-            <li><a>Comerío</a></li>
-            <li><a>Corozal</a></li>
-            <li><a>Culebra</a></li>
-            <li><a>Dorado</a></li>
-            <li><a>Fajardo</a></li>
-            <li><a>Florida</a></li>
-            <li><a>Guánica</a></li>
-            <li><a>Guayama</a></li>
-            <li><a>Guaynabo</a></li>
-            <li><a>Gurabo</a></li>
-            <li><a>Hatillo</a></li>
-            <li><a>Hormigueros</a></li>
-            <li><a>Humacao</a></li>
-            <li><a>Isabela</a></li>
-            <li><a>Jayuya</a></li>
-            <li><a>Juana Díaz</a></li>
-            <li><a>Juncos</a></li>
-            <li><a>Lajas</a></li>
-            <li><a>Lares</a></li>
-            <li><a>Las Marías</a></li>
-            <li><a>Las Piedras</a></li>
-            <li><a>Loíza</a></li>
-            <li><a>Luquillo</a></li>
-            <li><a>Manatí</a></li>
-            <li><a>Maricao</a></li>
-            <li><a>Maunabo</a></li>
-            <li><a>Mayagüez</a></li>
-            <li><a>Moca</a></li>
-            <li><a>Morovis</a></li>
-            <li><a>Naguabo</a></li>
-            <li><a>Naranjito</a></li>
-            <li><a>Orocovis</a></li>
-            <li><a>Patillas</a></li>
-            <li><a>Peñuelas</a></li>
-            <li><a>Ponce</a></li>
-            <li><a>Quebradillas</a></li>
-            <li><a>Rincón</a></li>
-            <li><a>Río Grande</a></li>
-            <li><a>Sabana Grande</a></li>
-            <li><a>Salinas</a></li>
-            <li><a>San Germán</a></li>
-            <li><a>San Juan</a></li>
-            <li><a>San Lorenzo</a></li>
-            <li><a>San Sebastián</a></li>
-            <li><a>Santa Isabel</a></li>
-            <li><a>Toa Baja</a></li>
-            <li><a>Toa Alta</a></li>
-            <li><a>Trujillo Alto</a></li>
-            <li><a>Utuado</a></li>
-            <li><a>Vega Alta</a></li>
-            <li><a>Vega Baja</a></li>
-            <li><a>Vieques</a></li>
-            <li><a>Villalba</a></li>
-            <li><a>Yabucoa</a></li>
-            <li><a>Yauco</a></li>
-        </ul>
-    </div>
-    <div>
 
-    </div>
-</body>
+     <div>
+
+          <div class="nav">
+            <div>
+              <div class="btn">
+              <button class="user-login">Sign up / Log in</button>
+              </div>
+
+            </div>
+             <div class = "home-search">
+              <ul>
+                  <li><a>Rent</a></li>
+                  <li><a>Buy</a></li>
+                  <li><a>See All</a></li>
+              </ul>
+                 <input type="text" placeholder="Country, city, zip code... "/>
+              <a id="search">Search</a>
+              <br/>
+              <button class="near-me">Find listings near me</button>
+          </div>
+          </div>
+
+      <img src="../static/morro.png" alt="El Morro" />
+      <body>
+          <div class="pueblo-listing">
+              <ul>
+                  <li><a>Adjuntas</a></li>
+                  <li><a>Aguada</a></li>
+                  <li><a>Aguadilla</a></li>
+                  <li><a>Aguas Buenas</a></li>
+                  <li><a>Aibonito</a></li>
+                  <li><a>Añasco</a></li>
+                  <li><a>Arecibo</a></li>
+                  <li><a>Arroyo</a></li>
+                  <li><a>Añasco</a></li>
+                  <li><a>Barceloneta</a></li>
+                  <li><a>Barranquitas</a></li>
+                  <li><a>Bayamón</a></li>
+                  <li><a>Cabo Rojo</a></li>
+                  <li><a>Caguas</a></li>
+                  <li><a>Camuy</a></li>
+                  <li><a>Canóvanas</a></li>
+                  <li><a>Carolina</a></li>
+                  <li><a>Cataño</a></li>
+                  <li><a>Cayey</a></li>
+                  <li><a>Ceiba</a></li>
+                  <li><a>Ciales</a></li>
+                  <li><a>Cidra</a></li>
+                  <li><a>Coamo</a></li>
+                  <li><a>Comerío</a></li>
+                  <li><a>Corozal</a></li>
+                  <li><a>Culebra</a></li>
+                  <li><a>Dorado</a></li>
+                  <li><a>Fajardo</a></li>
+                  <li><a>Florida</a></li>
+                  <li><a>Guánica</a></li>
+                  <li><a>Guayama</a></li>
+                  <li><a>Guaynabo</a></li>
+                  <li><a>Gurabo</a></li>
+                  <li><a>Hatillo</a></li>
+                  <li><a>Hormigueros</a></li>
+                  <li><a>Humacao</a></li>
+                  <li><a>Isabela</a></li>
+                  <li><a>Jayuya</a></li>
+                  <li><a>Juana Díaz</a></li>
+                  <li><a>Juncos</a></li>
+                  <li><a>Lajas</a></li>
+                  <li><a>Lares</a></li>
+                  <li><a>Las Marías</a></li>
+                  <li><a>Las Piedras</a></li>
+                  <li><a>Loíza</a></li>
+                  <li><a>Luquillo</a></li>
+                  <li><a>Manatí</a></li>
+                  <li><a>Maricao</a></li>
+                  <li><a>Maunabo</a></li>
+                  <li><a>Mayagüez</a></li>
+                  <li><a>Moca</a></li>
+                  <li><a>Morovis</a></li>
+                  <li><a>Naguabo</a></li>
+                  <li><a>Naranjito</a></li>
+                  <li><a>Orocovis</a></li>
+                  <li><a>Patillas</a></li>
+                  <li><a>Peñuelas</a></li>
+                  <li><a>Ponce</a></li>
+                  <li><a>Quebradillas</a></li>
+                  <li><a>Rincón</a></li>
+                  <li><a>Río Grande</a></li>
+                  <li><a>Sabana Grande</a></li>
+                  <li><a>Salinas</a></li>
+                  <li><a>San Germán</a></li>
+                  <li><a>San Juan</a></li>
+                  <li><a>San Lorenzo</a></li>
+                  <li><a>San Sebastián</a></li>
+                  <li><a>Santa Isabel</a></li>
+                  <li><a>Toa Baja</a></li>
+                  <li><a>Toa Alta</a></li>
+                  <li><a>Trujillo Alto</a></li>
+                  <li><a>Utuado</a></li>
+                  <li><a>Vega Alta</a></li>
+                  <li><a>Vega Baja</a></li>
+                  <li><a>Vieques</a></li>
+                  <li><a>Villalba</a></li>
+                  <li><a>Yabucoa</a></li>
+                  <li><a>Yauco</a></li>
+              </ul>
+          </div>
+          <div class="features">
+            <div class="text-f">Want to sell or rent out your porperty?</div>
+            <img src="../static/listing.jpeg" alt="Listings" />
+            <div class="overlay">
+              <div class="text"><a>Add a Listing</a></div>
+            </div>
+          </div>
+          <div class="features2">
+            <div class="text-f2">Want to add listings to your Favorites?</div>
+            <img src="../static/fav.jpeg" alt="Fav" />
+            <div class="overlay2">
+              <div class="text2"><a>Sign Up</a></div>
+            </div>
+          </div>
+          <div class="features3">
+            <div class="text-f3">Search areas near your favorite hot spots?</div>
+          <img src="../static/SJ.png" alt="SJ" />
+              <div class="overlay3">
+                <div class="text3"><a>Sign Up</a></div>
+            </div>
+          </div>
+      </body>
+  </div>
+
 </html>
